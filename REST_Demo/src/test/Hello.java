@@ -21,5 +21,15 @@ public class Hello {
 		return resource;
 	}
 	
+	@GET
+	@Produces(MediaType.TEXT_HTML)
+	public String sayHelloHTML()
+	{
+		String resource = "<h2>"+
+		" Hiii Rahul Dubey HTML </h2>";
+		
+		return resource;
+	}
+	
 	
 }
